@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Gateway Integration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+
+  <!--<link rel="stylesheet" href="media1.css">-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--for social media icons-->
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    .images{
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    body{
+        background: rgb(116, 3, 101);
+        overflow: hidden;
+    }
+    .text{
+        font-family: cursive;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, rgb(54, 54, 54), #fff, rgb(54, 54, 54));
+        letter-spacing: 5px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine 5s linear infinite;
+        position: relative;
+    }
+    @keyframes shine {
+        0% {
+            background-position-x: -500%;
+        }
+        100% {
+            background-position-x: 500%;
+        }
+    }
+
+    footer{
+	text-align: center;
+	overflow: hidden;
+	padding-top: 5px;
+    right: 50%;
+    bottom: 8px;
+    position: absolute;
+    font-size: 20px;
+    color: rgb(12, 2, 2);
+    }
+    
+</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="name"><img src="image/logo.png" width="70px"> The Sparks Food Donation<br></div>
+			<ul class="navbar-links">
+				<li><a href="index.html">Donate</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+	</nav>
+
+        <div class="images">
+            <div class="text">
+                <p>"It's not how much we give <br>but how much love we put into giving."</p></div>
+            <div class="carousel">
+            <ul>
+                <li><img src="images/img2.jpg"></li>
+                <li><img src="image/img3.jpeg"></li>
+                <li><img src="image/pic4.jpg"></li>
+                <li><img src="image/pic5.jpg"></li>
+                <li><img src="image/img6.jpg"></li>
+                <li><img src="image/img3.jpg"></li>
+                <li><img src="image/img9.jpg"></li>
+                <li><img src="image/img11.jpg"></li>
+                <li><img src="image/img10.jpg"></li>
+                <li><img src="image/img12.jpg"></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p style="font-family: fantasy;">Copyright &copy 2022</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.images').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+
+</body>
+</html>

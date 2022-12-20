@@ -1,0 +1,88 @@
+<doctype! html>
+<html>
+<head>
+	<title>Payment Gateway Integration</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--for social media icons-->
+
+  <style>
+	* {
+        margin:0;
+        padding:0;
+    }
+	body{
+		background-color: #740365;
+	}
+	p{
+		font-size: 20px;
+		font-family: cursive;
+		color: aliceblue;
+		text-transform: uppercase;
+		position: absolute;
+		top: 37%;
+		left: 45%;
+		right: 10%;
+		justify-content:space-between;
+		-webkit-animation: glow 2s ease-in-out infinite alternate;
+  		-moz-animation: glow 2s ease-in-out infinite alternate;
+  		animation: glow 2s ease-in-out infinite alternate;
+	}
+
+	@keyframes glow {
+    from {
+    	color: #fff;
+    	text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2;
+    }
+  
+    to {
+     	color: gray;
+    	text-shadow: 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+	}
+	social{
+		text-align:center;
+
+	}
+	
+  </style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="name"><img src="image/logo.png" width="70px"> The Sparks Food Donation<br></div>
+			<ul class="navbar-links">
+				<li><a href="index.html">Donate</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+	</nav>
+	<div id="Donate" class="box">
+		<div class="container-fluid bg-1 text-center">
+			<img src="image/home1.jpg" alt="Charity" width="740px" height="600px" style="float: left; vertical-align: top;">
+			<p><br><br><br>"I donate heavily to the church and various churches in the Detroit community and food banks. — Aretha Franklin”</p>
+		   <div class="pattern">                      
+			<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HiHtJ7GFduMgUL" async> </script> </form>
+		   </div>
+		</div>
+	</div>
+
+
+
+	<footer class="social-footer">
+		<div class="foot">
+        <ul class="social">
+            <li class="fb"><a href="https://www.facebook.com/thesparksfoundation.info"><button class="border"><i class="fab fa-facebook-f"></i></button></a></li>
+            <li class="twitter"><a href="https://twitter.com/tsfsingapore"><button class="border"><i class="fab fa-twitter"></i></button></a></li>
+            <li class="insta"><a href="https://www.instagram.com/thesparksfoundation.info/"><button class="border"><i class="fab fa-instagram"></i></button></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/company/the-sparks-foundation/"><button class="border"><i class="fab fa-linkedin-in"></i></button></a></li>
+            <li class="whatsapp"><button class="border"><i class="fab fa-whatsapp"></i></button></li>
+        </ul>
+		</div>
+    </footer>
+</body>
+</html>
